@@ -1,1 +1,36 @@
-Hey!
+jake@jake:~/Test$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+	modified:   Test
+no changes added to commit (use "git add" and/or "git commit -a")
+
+jake@jake:~/Test$ git add *
+
+jake@jake:~/Test$ git status
+
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+	modified:   Test
+
+jake@jake:~/Test$ git commit -m "changed hello to hey!
+"
+[master 7dbd547] changed hello to hey!
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+jake@jake:~/Test$ git push origin master
+Username for 'https://github.com': Jakebrugger
+
+Password for 'https://Jakebrugger@github.com': 
+
+Counting objects: 3, done.
+Writing objects: 100% (3/3), 249 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+git To https://github.com/Jakebrugger/Test.git
+   e206213..7dbd547  master -> master
+
+
